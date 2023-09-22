@@ -18,12 +18,12 @@
 ## Installation
 
 ```shell script
-$ go get -u github.com/guanguans/id-validator
+$ go get -u github.com/dotecho/id-validator
 ```
 
 ## Usage
 
-This is just a quick introduction, view the [GoDoc](https://godoc.org/github.com/guanguans/id-validator) for details.
+This is just a quick introduction, view the [GoDoc](https://godoc.org/github.com/dotecho/id-validator) for details.
 
 Let's start with a trivial example:
 
@@ -31,7 +31,7 @@ Let's start with a trivial example:
 package main
 
 import (
-    idvalidator "github.com/guanguans/id-validator"
+    idvalidator "github.com/dotecho/id-validator"
     "gopkg.in/ffmt.v1"
 )
 
@@ -48,7 +48,7 @@ func main() {
     ffmt.P(idvalidator.GetInfo("500154199301135886", true))  // 严格模式获取身份证号信息
     ffmt.P(idvalidator.GetInfo("500154199301135886", false)) // 非严格模式获取身份证号信息
     // []interface {}[
-    //     github.com/guanguans/id-validator.IdInfo{          // 身份证号信息
+    //     github.com/dotecho/id-validator.IdInfo{          // 身份证号信息
     //         AddressCode: int(500154)                           // 地址码
     //         Abandoned:   int(0)                                // 地址码是否废弃：1为废弃的，0为正在使用的
     //         Address:     string("重庆市市辖区开州区")             // 地址

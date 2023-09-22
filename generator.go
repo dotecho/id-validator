@@ -12,7 +12,7 @@ import (
 	"strings"
 	"time"
 
-	"github.com/guanguans/id-validator/data"
+	"github.com/dotecho/id-validator/data"
 	"github.com/spf13/cast"
 )
 

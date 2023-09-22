@@ -5,7 +5,7 @@
 package main
 
 import (
-	idvalidator "github.com/guanguans/id-validator"
+	idvalidator "github.com/dotecho/id-validator"
 	"gopkg.in/ffmt.v1"
 )
 

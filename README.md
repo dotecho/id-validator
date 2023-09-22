@@ -4,15 +4,15 @@
 
 > China ID number validator. - 中国身份证号验证器。
 
-[![tests](https://github.com/guanguans/id-validator/actions/workflows/tests.yml/badge.svg)](https://github.com/guanguans/id-validator/actions/workflows/tests.yml)
+[![tests](https://github.com/dotecho/id-validator/actions/workflows/tests.yml/badge.svg)](https://github.com/dotecho/id-validator/actions/workflows/tests.yml)
 [![codecov](https://codecov.io/gh/guanguans/id-validator/branch/main/graph/badge.svg?token=7X523bI44b)](https://codecov.io/gh/guanguans/id-validator)
-[![Go Report Card](https://goreportcard.com/badge/github.com/guanguans/id-validator)](https://goreportcard.com/report/github.com/guanguans/id-validator)
-[![GoDoc](https://godoc.org/github.com/guanguans/id-validator?status.svg)](https://godoc.org/github.com/guanguans/id-validator)
-[![GitHub release](https://img.shields.io/github/tag/guanguans/id-validator.svg)](https://github.com/guanguans/id-validator/releases)
+[![Go Report Card](https://goreportcard.com/badge/github.com/dotecho/id-validator)](https://goreportcard.com/report/github.com/dotecho/id-validator)
+[![GoDoc](https://godoc.org/github.com/dotecho/id-validator?status.svg)](https://godoc.org/github.com/dotecho/id-validator)
+[![GitHub release](https://img.shields.io/github/tag/guanguans/id-validator.svg)](https://github.com/dotecho/id-validator/releases)
 ![GitHub go.mod Go version](https://img.shields.io/github/go-mod/go-version/guanguans/id-validator)
 ![GitHub repo size](https://img.shields.io/github/repo-size/guanguans/id-validator)
 ![GitHub all releases](https://img.shields.io/github/downloads/guanguans/id-validator/total)
-[![GitHub license](https://img.shields.io/github/license/guanguans/id-validator.svg)](https://github.com/guanguans/id-validator/blob/master/LICENSE)
+[![GitHub license](https://img.shields.io/github/license/guanguans/id-validator.svg)](https://github.com/dotecho/id-validator/blob/master/LICENSE)
 
 ## 功能
 
@@ -28,18 +28,18 @@
 ## 安装
 
 ```shell script
-$ go get -u github.com/guanguans/id-validator
+$ go get -u github.com/dotecho/id-validator
 ```
 
 ## 使用
 
-这只是一个快速介绍, 请查看 [GoDoc](https://godoc.org/github.com/guanguans/id-validator) 获得详细信息。
+这只是一个快速介绍, 请查看 [GoDoc](https://godoc.org/github.com/dotecho/id-validator) 获得详细信息。
 
 ```go
 package main
 
 import (
-    idvalidator "github.com/guanguans/id-validator"
+    idvalidator "github.com/dotecho/id-validator"
     "gopkg.in/ffmt.v1"
 )
 
@@ -56,7 +56,7 @@ func main() {
     ffmt.P(idvalidator.GetInfo("500154199301135886", true))  // 严格模式获取身份证号信息
     ffmt.P(idvalidator.GetInfo("500154199301135886", false)) // 非严格模式获取身份证号信息
     // []interface {}[
-    //     github.com/guanguans/id-validator.IdInfo{          // 身份证号信息
+    //     github.com/dotecho/id-validator.IdInfo{          // 身份证号信息
     //         AddressCode: int(500154)                           // 地址码
     //         Abandoned:   int(0)                                // 地址码是否废弃：1为废弃的，0为正在使用的
     //         Address:     string("重庆市市辖区开州区")             // 地址
