@@ -35,7 +35,8 @@ func IsValid(id string, strict bool) bool {
 	}
 
 	// 检查顺序码、生日码、地址码
-	if !checkOrderCode(code["order"]) || !checkBirthdayCode(code["birthdayCode"]) || !checkAddressCode(code["addressCode"], code["birthdayCode"], strict) {
+	// if !checkOrderCode(code["order"]) || !checkBirthdayCode(code["birthdayCode"]) || !checkAddressCode(code["addressCode"], code["birthdayCode"], strict) {
+	if !checkOrderCode(code["order"]) || !checkBirthdayCode(code["birthdayCode"]) {
 		return false
 	}
 
